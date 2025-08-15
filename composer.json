@@ -1,0 +1,46 @@
+{
+    "name": "hossein-hashemi/laravel-api-response",
+    "description": "A Laravel package for consistent API responses.",
+    "type": "library",
+    "require": {
+        "illuminate/support": "^12.21"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5",
+        "pestphp/pest": "^3.8",
+        "friendsofphp/php-cs-fixer": "^3.84",
+        "phpstan/phpstan": "^2.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "HosseinHashemi\\LaravelApiResponse\\": "src/",
+            "HosseinHashemi\\LaravelApiResponse\\Facades\\": "Facades/"
+        },
+        "classmap": [
+            "config"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Hossein Hashemi"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HosseinHashemi\\LaravelApiResponse\\ApiResponseServiceProvider"
+            ],  
+            "aliases": {
+                "ApiResponse" : "HosseinHashemi\\LaravelApiResponse\\ApiResponseFacade"
+            }
+        }
+    }
+
+}
