@@ -16,3 +16,12 @@ Install via Composer:
 
 ```bash
 composer require hossein-hashemi/laravel-api-response
+
+---
+
+## 💿 publish
+
+Publish via composer
+
+```bash
+php artisan vendor:publish --provider="HosseinHashemi\LaravelApiResponse\ApiResponseServiceProvider"
