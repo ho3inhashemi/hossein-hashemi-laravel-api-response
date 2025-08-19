@@ -19,9 +19,9 @@ composer require hossein-hashemi/laravel-api-response
 
 ---
 
-## 💿 publish
+### ⚙️ publish
 
-Publish via composer
+Publish via Artisan
 
 ```bash
 php artisan vendor:publish --provider="HosseinHashemi\LaravelApiResponse\ApiResponseServiceProvider"
