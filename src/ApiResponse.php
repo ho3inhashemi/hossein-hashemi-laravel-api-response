@@ -26,7 +26,7 @@ class ApiResponse
         ];
         
         if (!empty($meta)) {
-            $keys['meta'] = $meta;
+            $response[$keys['meta']] = $meta;
         }
 
         return response()->json($response, Response::HTTP_OK);
